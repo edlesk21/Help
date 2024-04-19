@@ -19,47 +19,51 @@ h1{
     text-align: center;
 }
 
-.picbox {
-    width: 230px;
-    height: 230px; 
-    border-radius: 40px;
-    background-color: red;
-    background-image: url('person.png');
-    background-size:contain ;
-    background-position: center;
-    margin: 0 auto; 
-
-}
-.info-box {
-  width: 275px;
-  height: 525px;
-  margin: 20px left;
-  background-color: gray;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  overflow: hidden;
-  padding: 20px; /* Spacing inside the box */
-  box-sizing: border-box;
-}
-
-.info-box h2{
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.info-box h5{
-  color: red;
-  text-align: center;
-  font-size: 12;
-  margin-top: 0;
-}
-  
 /* Styling for the left column */
 .left-column {
-  background: #FF0000; /* red */
   color: white;
   flex: 1;
   margin-right: 20px; /* Space between columns */
+}
+
+.picbox {
+  width: 275px;
+  height: 230px; 
+  border-radius: 40px;
+  background-color: red;
+  background-image: url('person.png');
+  background-size:contain ;
+  background-position: center;
+  margin: 0 auto; 
+
+}
+.info-box {
+width: 320px;
+height: 525px;
+margin: 20px left;
+background-color: gray;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+overflow: hidden;
+padding: 20px; /* Spacing inside the box */
+box-sizing: border-box;
+}
+
+.info-box h2{
+text-align: center;
+margin-bottom: 0;
+}
+
+.info-box h5{
+color: red;
+text-align: center;
+font-size: 12;
+margin-top: 0;
+}
+
+.info-box p{
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 /* Styling for the center column */
@@ -70,6 +74,20 @@ h1{
   justify-content: space-between;
   margin-right: 20px; /* Space between columns */
 }
+
+/* Styling for the boxes inside center and right columns */
+.center-column div, .right-column div {
+  background: #00FF00; /* green */
+  margin-bottom: 10px;
+  padding: 10px;
+  height: calc(33.333% - 10px); /* Divide the height evenly */
+}
+
+/* Remove the margin for the last div to fit exactly into the column */
+.center-column div:last-child, .right-column div:last-child {
+  margin-bottom: 0;
+}
+
 .profile-section {
   padding: 20px;
   border-radius: 40px;
@@ -141,15 +159,3 @@ strong {
   font-family: Arial, sans-serif;
 }
 
-/* Styling for the boxes inside center and right columns */
-.center-column div, .right-column div {
-  background: #00FF00; /* green */
-  margin-bottom: 10px;
-  padding: 10px;
-  height: calc(33.333% - 10px); /* Divide the height evenly */
-}
-
-/* Remove the margin for the last div to fit exactly into the column */
-.center-column div:last-child, .right-column div:last-child {
-  margin-bottom: 0;
-}

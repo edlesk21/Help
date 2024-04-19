@@ -1,1 +1,53 @@
 /* Add screen styles below */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Styling for the left column */
+  .left-column {
+    background: #FF0000; /* red */
+    color: white;
+    flex: 1;
+    margin-right: 20px; /* Space between columns */
+  }
+  
+  /* Styling for the center column */
+  .center-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px; /* Space between columns */
+  }
+  
+  /* Styling for the right column */
+  .right-column {
+    background: #0000FF; /* blue */
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Styling for the boxes inside center and right columns */
+  .center-column div, .right-column div {
+    background: #00FF00; /* green */
+    margin-bottom: 10px;
+    padding: 10px;
+    height: calc(33.333% - 10px); /* Divide the height evenly */
+  }
+  
+  /* Remove the margin for the last div to fit exactly into the column */
+  .center-column div:last-child, .right-column div:last-child {
+    margin-bottom: 0;
+  }

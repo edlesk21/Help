@@ -77,13 +77,12 @@ margin-top: 0;
 
 /* Styling for the boxes inside center and right columns */
 .center-column div, .right-column div {
-  background: grey; /* green */
+  background: grey;
   margin-bottom: 10px;
   padding: 10px;
   height: calc(33.333% - 10px); /* Divide the height evenly */
 }
 
-/* Remove the margin for the last div to fit exactly into the column */
 .center-column div:last-child, .right-column div:last-child {
   margin-bottom: 0;
 }
@@ -92,14 +91,18 @@ margin-top: 0;
   padding: 20px;
   border-radius: 40px;
   border-bottom: 1px solid #eaeaea;
+  color: #fff;
 }
 
 .profile-section h2{
-  margin-left: 10px;
+  margin-left:80px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .profile-section ul{
   margin-left: 10px;
+  font-size: 15px;
 }
 
 /* Styling for the right column */
@@ -111,12 +114,18 @@ margin-top: 0;
   justify-content: space-between;
 }
 
+.connect-button{
+  border-radius: 40px;
+  color: white;
+  background: #fff;
+}
+
 .connect-button button {
-  background-color: #FF0000; /* Red background */
-  color: #fff; /* White text */
+  background-color: #FF0000;
+  color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1.2em;
   margin-left: 80px;
   margin-top: 40px;
@@ -125,11 +134,13 @@ margin-top: 0;
 .followers-info,.posts-info {
   text-align: center;
   margin-bottom: 20px; /* Space between sections */
+  border-radius: 40px;
 }
 
 .follower-count-box {
   display: flex;
   justify-content: space-between; /* This separates the two divs */
+  border-radius: 40px;
 }
 
 .followers-count, .following-count {
@@ -140,6 +151,19 @@ margin-top: 0;
 .followers-info div, .posts-info {
   padding: 10px 0;
   margin-bottom: 10px; /* Space between boxes */
+}
+
+.posts{
+  border-radius: 40px;
+  text-align: center;
+}
+
+.contact{
+  border-radius: 40px;
+}
+
+.contact p{
+  margin-left: 10px;
 }
 
 strong {

@@ -100,9 +100,13 @@ margin-top: 0;
   margin-bottom: 10px;
 }
 
-.profile-section ul{
+.profile-section li{
   margin-left: 10px;
   font-size: 15px;
+}
+
+.profile-section h4{
+  margin-top: 5px;
 }
 
 /* Styling for the right column */
@@ -164,6 +168,7 @@ margin-top: 0;
 
 .contact p{
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 strong {

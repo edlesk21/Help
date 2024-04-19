@@ -77,7 +77,7 @@ margin-top: 0;
 
 /* Styling for the boxes inside center and right columns */
 .center-column div, .right-column div {
-  background: #00FF00; /* green */
+  background: grey; /* green */
   margin-bottom: 10px;
   padding: 10px;
   height: calc(33.333% - 10px); /* Divide the height evenly */
@@ -104,7 +104,6 @@ margin-top: 0;
 
 /* Styling for the right column */
 .right-column {
-  background: #0000FF; /* blue */
   color: white;
   flex: 1;
   display: flex;
@@ -119,8 +118,8 @@ margin-top: 0;
   border: none;
   border-radius: 5px;
   font-size: 1.2em;
-  margin-left: 75px;
-  margin-top: 75px;
+  margin-left: 80px;
+  margin-top: 40px;
 }
 
 .followers-info,.posts-info {
@@ -131,19 +130,14 @@ margin-top: 0;
 .follower-count-box {
   display: flex;
   justify-content: space-between; /* This separates the two divs */
-  background: #eeeeee; /* Light grey background */
-  padding: 10px;
 }
 
-.followers-count,
-.following-count {
+.followers-count, .following-count {
   flex: 1;
   padding: 10px 0; /* Padding for top and bottom */
 }
 
-.followers-info div,
-.posts-info {
-  background: #eeeeee; /* Light grey background */
+.followers-info div, .posts-info {
   padding: 10px 0;
   margin-bottom: 10px; /* Space between boxes */
 }

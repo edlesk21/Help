@@ -4,50 +4,152 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* Styling the container */
+
   .container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
   }
+
+  .special {
+    color: red;
+}
+
+h1{
+    text-align: center;
+}
+
+.picbox {
+    width: 230px;
+    height: 230px; 
+    border-radius: 40px;
+    background-color: red;
+    background-image: url('person.png');
+    background-size:contain ;
+    background-position: center;
+    margin: 0 auto; 
+
+}
+.info-box {
+  width: 275px;
+  height: 525px;
+  margin: 20px left;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 20px; /* Spacing inside the box */
+  box-sizing: border-box;
+}
+
+.info-box h2{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.info-box h5{
+  color: red;
+  text-align: center;
+  font-size: 12;
+  margin-top: 0;
+}
   
-  /* Styling for the left column */
-  .left-column {
-    background: #FF0000; /* red */
-    color: white;
-    flex: 1;
-    margin-right: 20px; /* Space between columns */
-  }
-  
-  /* Styling for the center column */
-  .center-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 20px; /* Space between columns */
-  }
-  
-  /* Styling for the right column */
-  .right-column {
-    background: #0000FF; /* blue */
-    color: white;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  /* Styling for the boxes inside center and right columns */
-  .center-column div, .right-column div {
-    background: #00FF00; /* green */
-    margin-bottom: 10px;
-    padding: 10px;
-    height: calc(33.333% - 10px); /* Divide the height evenly */
-  }
-  
-  /* Remove the margin for the last div to fit exactly into the column */
-  .center-column div:last-child, .right-column div:last-child {
-    margin-bottom: 0;
-  }
+/* Styling for the left column */
+.left-column {
+  background: #FF0000; /* red */
+  color: white;
+  flex: 1;
+  margin-right: 20px; /* Space between columns */
+}
+
+/* Styling for the center column */
+.center-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px; /* Space between columns */
+}
+.profile-section {
+  padding: 20px;
+  border-radius: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.profile-section h2{
+  margin-left: 10px;
+}
+
+.profile-section ul{
+  margin-left: 10px;
+}
+
+/* Styling for the right column */
+.right-column {
+  background: #0000FF; /* blue */
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.connect-button button {
+  background-color: #FF0000; /* Red background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-left: 75px;
+  margin-top: 75px;
+}
+
+.followers-info,.posts-info {
+  text-align: center;
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.follower-count-box {
+  display: flex;
+  justify-content: space-between; /* This separates the two divs */
+  background: #eeeeee; /* Light grey background */
+  padding: 10px;
+}
+
+.followers-count,
+.following-count {
+  flex: 1;
+  padding: 10px 0; /* Padding for top and bottom */
+}
+
+.followers-info div,
+.posts-info {
+  background: #eeeeee; /* Light grey background */
+  padding: 10px 0;
+  margin-bottom: 10px; /* Space between boxes */
+}
+
+strong {
+  display: block;
+  font-size: 2em; /* Larger font size for numbers */
+  margin-top: 5px;
+}
+
+/* Additional styling for aesthetics */
+.right-column * {
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the boxes inside center and right columns */
+.center-column div, .right-column div {
+  background: #00FF00; /* green */
+  margin-bottom: 10px;
+  padding: 10px;
+  height: calc(33.333% - 10px); /* Divide the height evenly */
+}
+
+/* Remove the margin for the last div to fit exactly into the column */
+.center-column div:last-child, .right-column div:last-child {
+  margin-bottom: 0;
+}
